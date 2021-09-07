@@ -321,6 +321,9 @@ img {
   padding: 0;
   padding-top: 16px;
 }
+.team-box-list:not(:last-child) {
+  margin-right: 10px;
+}
 .igor-work {
   margin: 0;
   margin-top: 10px;
@@ -486,28 +489,33 @@ img {
   border: transparent;
   border-radius: 4px;
 
-  transition-property: background-color;
+  transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters {
   display: flex;
   justify-content: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+}
+.filters :not(:last-child) {
+  margin-right: 8px;
 }
 .btn-all {
   min-width: 73px;
   padding: 6px 22px;
-  margin-right: 8px;
+  margin: 0;
 }
 .btn-website {
-  min-width: 128px;
   padding: 6px 22px;
-  margin-right: 8px;
 }
 .btn-apps {
   min-width: 145px;
   padding: 6px 22px;
-  margin-right: 8px;
 }
 .btn-design {
   min-width: 103px;
@@ -516,7 +524,6 @@ img {
 .btn-marketing {
   width: 130px;
   padding: 6px 22px;
-  margin-left: 8px;
 }
 /* вибір контенту */
 .first-section:nth-child(-n + 6) {
@@ -623,6 +630,10 @@ img {
 
   width: 528px;
   height: 581px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
