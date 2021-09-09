@@ -618,7 +618,7 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: opacity 250ms linear, visibility 300ms;
+  transition: opacity 250ms linear, visibility 250ms;
 }
 .modal {
   position: absolute;
@@ -628,10 +628,6 @@ img {
 
   width: 528px;
   height: 581px;
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
